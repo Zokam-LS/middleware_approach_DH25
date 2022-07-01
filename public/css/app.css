@@ -5,4 +5,14 @@
 body {
   margin: 0;
   font-family: sans-serif;
+  background-color: lightblue;
+}
+
+.welcome{
+  text-align: center;
+}
+.adminName{
+  font-weight: bold;
+  text-decoration: underline;
+  text-shadow: 2px 2px white;
 }

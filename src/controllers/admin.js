@@ -1,7 +1,8 @@
-const admins = ['Ada', 'Greta', 'Vim', 'Tim'];
+
 const adminController = {
     access: (req, res)=>{
-        res.render('admin', {admins});
+        //res.send('Welcome Admin: '+ req.query.user)
+        res.render('admin', {user : req.query.user});
     }
 };
 
