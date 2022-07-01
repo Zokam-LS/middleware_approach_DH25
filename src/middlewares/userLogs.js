@@ -1,6 +1,7 @@
 const fs = require('fs');
 const userLogs = (req, res, next)=>{
-    fs.appendFileSync('./logs/.userLogs.txt', 'El usuario ingreso a la ruta: ' + req + '\n');
+    fs.appendFileSync('src/logs/userLogs.txt', 'El usuario ingreso a la ruta: ' + req.url + '\n');
+    
     next();
 }
 
